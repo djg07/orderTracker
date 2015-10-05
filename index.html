@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Template</title>
+   <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+</head>
+
+<body>
+
+<div id="peopleModule">
+  <div id="topSection">
+            <h1 style="opacity:.87">Order Tracker</h1>
+            <!--<input placeholder="name" type="text">
+            <button id="addPerson">Add Person</button>-->
+            <input type="text" id="orderAutocomplete" placeholder="Start typing to add an item..."
+                   style="width:250px;opacity:.87">
+            <br/>            
+            <br/>
+
+            <ul id="people">
+                <script id="people-template" type="text/template">
+                    {{#people}}
+                        <li>
+                            <span class="personName">{{name}}</span>
+                            <span class="personName">CF - {{cf}}</span>
+                            <i class="del">X</i>
+                        </li>
+                    {{/people}}
+                </script>
+            </ul>
+    <br/>
+  </div>
+  <div>
+    <h2 style="opacity:.87">Summary</h2>
+    <div id="orderTotalContainer">
+        <script id="order-template" type="text/template">
+        {{#orderTotal}}
+          
+          <span style="font-weight:600;opacity:.67">Total: {{.}} <span style="opacity:.54">Cubic Feet</span></span>
+          
+        {{/orderTotal}}
+        </div>
+      </script>
+      
+  </div>
+  <br>
+
+        </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.2.24/jquery.autocomplete.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>

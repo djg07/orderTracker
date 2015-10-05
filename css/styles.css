@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+
+body {
+    /* background: #EEEEEE; */
+    font-family: "Roboto", sans-serif;
+    
+  color: #000000;
+  margin: 0;
+  padding:0;
+}
+
+#topSection {
+  background-color:#FFF;
+  box-shadow: 0px 4px 5px #9E9E9E
+}
+
+
+
+
+input {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 10px;
+}
+button {
+    zoom: 1;
+    background-color: #03A9F4;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 1px 5px;
+
+}
+
+button.active {
+    background-color:rgb(165, 227, 158);
+}
+#peopleModule {
+    text-align: center;
+}
+#peopleModule ul {
+    padding: 0;
+}
+#peopleModule li {
+      
+
+    display: inline-block;
+    list-style-type: none;
+    background: #03A9F4;
+    border-radius: 1px;
+    padding: 3px 8px;
+    margin: 5px 0;
+    width: 200px;
+    box-shadow: 2px 3px 5px #B2B2B2;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+#peopleModule li:hover {
+    opacity: 1;
+}
+#peopleModule li span {
+    display: inline-block;
+    width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#peopleModule li i {
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+    font-style: normal;
+    background: #666;
+    padding: 2px 4px;
+    font-size: 60%;
+    color: white;
+    border-radius: 20px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    margin-top: 3px;
+}
+
+#peopleModule li i:hover {
+    opacity: 1;
+}
+
+#orderTotalContainer {
+  width: 250px;;
+  height:75px;
+  line-height:75px;
+  box-shadow: 0px 4px 5px #9E9E9E;
+  margin: 0 auto;
+  border-top:1px solid rgba(65,65,65,.1)
+}
